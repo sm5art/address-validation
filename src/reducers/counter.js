@@ -1,11 +1,9 @@
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../constants/ActionTypes';
+import { INCREMENT_COUNTER, DECREMENT_COUNTER, SEARCH_QUERY } from '../constants/ActionTypes';
 
-export default function counter(state = 0, action) {
+export default function search(state = {value:""}, action) {
   switch (action.type) {
-  case INCREMENT_COUNTER:
-    return state + 1;
-  case DECREMENT_COUNTER:
-    return state - 1;
+  case SEARCH_QUERY:
+    return action.value;
   default:
     return state;
   }
