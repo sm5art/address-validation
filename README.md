@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple Redux Boilerplate
 
 A simple, yet comprehensive React + Redux application, complete with DevTools.
@@ -149,3 +150,7 @@ This project supports [Babel 6](https://github.com/babel/babel), with reference 
 For convenience they are packed in a single preset called [**react-transform-hmre**](https://github.com/danmartinez101/babel-preset-react-hmre) but you can make your own.
 
 Syntax errors are displayed in an overlay using **[@glenjamin](https://github.com/glenjamin)**’s **[webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware)**, which replaces Webpack Dev Server. This project **[does not](https://medium.com/@dan_abramov/the-death-of-react-hot-loader-765fa791d7c4)** use React Hot Loader.
+=======
+# address-validation
+writing an api for address validation for ecommerce
+>>>>>>> 58758ef236c2c6b350fb125f14ce2cecfc297192
