@@ -1,4 +1,19 @@
-<<<<<<< HEAD
+# address-validation
+writing an api for address validation for ecommerce
+
+
+
+
+
+
+
+
+
+
+BUILT ON THIS
+
+
+
 # Simple Redux Boilerplate
 
 A simple, yet comprehensive React + Redux application, complete with DevTools.
@@ -30,7 +45,7 @@ This project features a super simple UI - just for you to see how everything is 
 
 ![](https://fat.gfycat.com/WarlikeFrightenedGraywolf.gif)
 
-If you found this helpful, please star/fork/follow me on **[GitHub](https://github.com/tsaiDavid/)** and follow me on **[Twitter](https://twitter.com/tftsai)**! 
+If you found this helpful, please star/fork/follow me on **[GitHub](https://github.com/tsaiDavid/)** and follow me on **[Twitter](https://twitter.com/tftsai)**!
 
 ### Features
 
@@ -80,7 +95,7 @@ Ideally, fork this boilerplate, then clone.
 $ git clone https://github.com/YOUR_GITHUB_USERNAME_HERE/simple-redux-boilerplate.git
 ```
 
-Install required dependencies. 
+Install required dependencies.
 (*Did you make sure you have the right version of Node?*)
 ```
 npm install
@@ -150,7 +165,3 @@ This project supports [Babel 6](https://github.com/babel/babel), with reference 
 For convenience they are packed in a single preset called [**react-transform-hmre**](https://github.com/danmartinez101/babel-preset-react-hmre) but you can make your own.
 
 Syntax errors are displayed in an overlay using **[@glenjamin](https://github.com/glenjamin)**’s **[webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware)**, which replaces Webpack Dev Server. This project **[does not](https://medium.com/@dan_abramov/the-death-of-react-hot-loader-765fa791d7c4)** use React Hot Loader.
-=======
-# address-validation
-writing an api for address validation for ecommerce
->>>>>>> 58758ef236c2c6b350fb125f14ce2cecfc297192
