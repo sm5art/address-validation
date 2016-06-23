@@ -18,7 +18,6 @@ export default class App extends Component {
       <div className="main-app-container">
         <div className="main-app-nav">Google Maps API</div>
         {/* notice that we then pass those unpacked props into the Counter component */}
-      //TODO REMOVE COUNTER AND ADD SEARCH
         <Search state={state} actions={actions} />
         <Footer />
       </div>
@@ -38,7 +37,7 @@ App.propTypes = {
  */
 function mapStateToProps(state) {
   return {
-    state:state.search
+    state
   };
 }
 

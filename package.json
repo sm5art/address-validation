@@ -45,6 +45,8 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "dependencies": {
+    "address-validator": "^0.2.2",
+    "body-parser": "^1.15.2",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.1.1",

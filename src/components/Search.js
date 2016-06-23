@@ -5,24 +5,39 @@ export default class Search extends Component {
     super(props, context);
   }
 
+  componentDidMount() {
+      navigator.geolocation.getCurrentPosition((position) => {
+        this.props.actions.load([position.coords.longitude,position.coords.latitude]);
+      })
+  }
+
   handleChange(event) {
-    console.log('changed')
-    this.props.actions.api(event.target.value);
+    this.props.actions.api(event.target.value,this.props.state.load.coords);
   }
 
   render() {
     const { state, actions } = this.props;
-    return (
-      <div className="counter-container">
-        <div className="counter-num-label">{JSON.stringify(state)}</div>
-        {/* Below, the even or odd statement is simply used to demonstrate how one could
-        easily use a ternary operator to conditionally show an 'even' or 'odd' string
-        based on the counter's value on state. */}
-        <div className="counter-buttons">
-          <input style={{display:"block",padding:"3px"}} type="text" onChange={this.handleChange.bind(this)}/>
+    var content;
+    if(state.load.status){
+      content = (<div className="counter-container">
+        <div className="counter-num-label">
+        <input className="suggestions" type="text" onChange={this.handleChange.bind(this)}/>
+          <ul>
+          {
+            state.search.map((object,i) => {
+              return <li className="suggestions"><span>{`${object.streetNumber|| ""} ${object.street||""} ${object.city||""} ${object.state||""} ${object.country||""}`}</span></li>
+            })
+          }
+          </ul>
         </div>
-      </div>
-    );
+      </div>)
+    }
+    else {
+      content = (
+        <h1>Finding your position...</h1>
+      )
+    }
+    return content;
   }
 }
 

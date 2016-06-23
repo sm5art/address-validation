@@ -6,3 +6,4 @@
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
 export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
 export const SEARCH_QUERY = 'SEARCH_QUERY';
+export const LOADED = 'LOADED';

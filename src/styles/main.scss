@@ -32,6 +32,14 @@ li {
   border-radius: 3px;
 }
 
+.suggestions {
+  width:50%;
+  height:20%;
+  li {
+    background-color: $accent-blue;
+  }
+}
+
 .main-app-container {
   padding-top: 2em;
 }

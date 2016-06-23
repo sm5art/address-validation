@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import search from './counter';
+import load from './load'
 
 /**
  * combineReducers is important to understand. As your app might grow in size
@@ -15,6 +16,7 @@ import search from './counter';
  * More info: http://rackt.org/redux/docs/api/combineReducers.html
  */
 const rootReducer = combineReducers({
+  load,
   search, // you might be used to: counter: counter,
 });
 

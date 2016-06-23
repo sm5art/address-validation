@@ -1,22 +1,13 @@
 const { url, id, token } = require('../config/maps');
 const request = require('request');
+const addressValidator = require('address-validator');
 
 module.exports = function(req,res) {
-  console.log(req.body.city);
-  request.post({
-    url,
-    qs:{
-      "auth-id":id,
-      "auth-token":token
-    },
-    body:JSON.stringify([{city:req.body.city, state : req.body.state}])
-  },(e,r,b) => {
-    if(e){
-      console.log(e);
+  console.log(req.body.address);
+  addressValidator.validate(req.body.address, addressValidator.match.unknown, function(err, exact, inexact){
+    for(i in exact){
+      inexact.unshift(exact[i]);
     }
-    else {
-      console.log(b);
-      res.send(b);
-    }
+    res.send(JSON.stringify(inexact));
   });
 }
